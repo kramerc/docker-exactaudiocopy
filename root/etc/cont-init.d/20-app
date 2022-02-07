@@ -1,0 +1,5 @@
+#!/bin/bash
+adduser abc cdrom
+ln -s /media/cdrom /app/.wine/dosdevices/d:
+ln -s /dev/cdrom /app/.wine/dosdevices/d::
+chown -R abc:abc /app
