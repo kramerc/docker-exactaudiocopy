@@ -2,7 +2,7 @@
 
 Runs Exact Audio Copy using Wine inside a Docker container.
 
-
+Example usage:
 ```
-docker run --rm -p 3000:3000 -v /dev/cdrom:/cdrom exactaudiocopy
+docker run --name=exactaudiocopy -p 3000:3000 --device /dev/cdrom:/dev/cdrom -v $(pwd)/config:/config -v $(pwd)/data:/data registry.kramerc.com/kramerc/docker-exactaudiocopy
 ```
